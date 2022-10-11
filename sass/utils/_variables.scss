@@ -14,3 +14,19 @@ $accent-color-bg-card: rgba(33, 150, 243, 0.9);
 $cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 $clients-bg: #f5f5f5;
 $footer-contact-color: rgba(255, 255, 255, 0.6);
+
+:root {
+    --main-color: #212121;
+    --accent-color: #2196f3;
+    --second-color: #757575;
+    --primery-white-color: #ffffff;
+    --button-second-backgund: #f5f4fa;
+    --hero-bg: #2f303a;
+    --header-border-color: #ececec;
+    --primery-grey-color: #afb1b8;
+  
+    --card-border-color: #eeeeee;
+    --hero-bg-hover: #188ce8;
+    --accent-color-bg-card: rgba(33, 150, 243, 0.9);
+    --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  }
