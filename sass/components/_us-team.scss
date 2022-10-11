@@ -1,0 +1,59 @@
+.team {
+  background-color: $button-second-backgund;
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $main-color;
+
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+
+    gap: 30px;
+  }
+  &__item {
+    list-style: none;
+    width: calc((100% - 90px) / 4);
+  }
+  &__card {
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__img {
+    display: block;
+  }
+  &__card-body {
+    background-color: $primery-white-color;
+    padding: 30px 10px;
+  }
+  &__secondary-title {
+    color: $main-color;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+  &__text {
+    color: $second-color;
+
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+}

@@ -1,0 +1,47 @@
+.clients {
+  align-items: center;
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+  }
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+    list-style: none;
+
+    gap: 30px;
+  }
+  &__card-item {
+    width: calc((100% - 150px) / 6);
+  }
+  &__link {
+    display: inline-flex;
+    width: 170px;
+    height: 92px;
+
+    padding: 16px 32px;
+    align-items: center;
+    justify-content: center;
+    fill: $primery-grey-color;
+
+    background-color: $clients-bg;
+
+    border: 1px solid $primery-grey-color;
+    border-radius: 4px;
+
+    transition: background-color 250ms $cubic-bezier, fill 250ms $cubic-bezier,
+      border 250ms $cubic-bezier;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      border: 1px solid $accent-color;
+    }
+  }
+}

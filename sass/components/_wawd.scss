@@ -1,0 +1,65 @@
+.wawd {
+  padding-top: 0;
+
+  &__card {
+    &::after {
+      content: '';
+      position: absolute;
+
+      display: block;
+      width: 100%;
+
+      bottom: 0;
+
+      height: 70px;
+      background: rgb(47, 48, 58);
+      opacity: 0.8;
+    }
+  }
+  &__title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+
+    gap: 30px;
+  }
+  &__item {
+    width: calc((100% - 60px) / 3);
+  }
+  &__box {
+    position: relative;
+  }
+  &__text {
+    position: absolute;
+
+    text-transform: uppercase;
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+
+    color: $primery-white-color;
+  }
+  &__img {
+    display: block;
+  }
+}

@@ -1,0 +1,20 @@
+.logo {
+  color: $accent-color;
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+  &-header {
+    color: $main-color;
+  }
+  &-footer {
+    color: $primery-white-color;
+  }
+}
+.indent__logo {
+  margin-top: 20px;
+}

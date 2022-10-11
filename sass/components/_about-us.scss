@@ -1,0 +1,42 @@
+.about {
+  &__list {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__secondary-title {
+    color: $main-color;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+  }
+  &__text {
+    color: $second-color;
+
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+  }
+  &__item {
+    list-style: none;
+    width: calc((100% - 90px) / 4);
+  }
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 120px;
+    width: 270px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    background-color: $button-second-backgund;
+  }
+  &__img {
+    height: 70px;
+    width: 70px;
+  }
+}
