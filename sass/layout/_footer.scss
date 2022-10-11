@@ -4,10 +4,39 @@
   background: #2f303a;
 
   &__list {
-    display: inline-flex;
+    @media screen and (min-width: 480px) {
+      max-width: 480px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+      display: flex;
+      flex-direction: initial;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+      display: inline-flex;
+      flex-wrap: nowrap;
+      flex-direction: initial;
+    }
   }
   &__item {
-    margin-right: 70px;
+    @media screen and (min-width: 480px) {
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+      margin-right: 70px;
+    }
   }
   &__address {
     padding: 0;
