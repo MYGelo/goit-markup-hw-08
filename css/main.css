@@ -399,6 +399,11 @@ p {
   font-size: 14px;
   line-height: 1.1;
 }
+@media screen and (max-width: 767px) {
+  .about__secondary-title {
+    text-align: center;
+  }
+}
 .about__text {
   color: #757575;
   font-size: 14px;
