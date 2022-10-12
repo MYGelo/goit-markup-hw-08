@@ -4,7 +4,7 @@
   background: #2f303a;
 
   &__list {
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
       max-width: 480px;
       display: flex;
       flex-wrap: wrap;
@@ -16,6 +16,8 @@
       max-width: 768px;
       display: flex;
       flex-direction: initial;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
 
     @media screen and (min-width: 1200px) {
@@ -26,16 +28,22 @@
     }
   }
   &__item {
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
+      align-items: center;
+      display: contents;
     }
 
     @media screen and (min-width: 768px) {
-      max-width: 768px;
+      margin-right: 165px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     @media screen and (min-width: 1200px) {
       max-width: 1200px;
       margin-right: 70px;
+      display: block;
     }
   }
   &__address {
@@ -49,6 +57,9 @@
     font-weight: 400;
 
     list-style: none;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
   &__address-item:not(:first-child) {
     margin-top: 10px;
@@ -72,6 +83,16 @@
       color: $accent-color;
     }
   }
+  &__social {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+    }
+  }
   &__social-title {
     padding-top: 12px;
 
@@ -86,10 +107,14 @@
     letter-spacing: 0.03em;
     text-align: left;
     color: $primery-white-color;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      padding: 0;
+      margin-top: 60px;
+    }
   }
-  &__subscribe--indent {
-    margin-left: 93px;
-  }
+
   &__subscribe {
     width: 358px;
     height: 50px;
@@ -102,6 +127,7 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     text-align: left;
+    margin-right: 12px;
 
     outline: none;
     color: #ffffff99;
@@ -112,6 +138,29 @@
     &:focus-within {
       border-color: $accent-color;
       color: $primery-white-color;
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 1199px) {
+      width: 450px;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+  &__subscribe--indent {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+      margin-top: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+      margin-top: 0;
     }
   }
 }
