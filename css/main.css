@@ -642,6 +642,12 @@ p {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .portfolio__navigation {
   display: flex;
   align-items: center;
@@ -660,10 +666,17 @@ p {
   list-style: none;
   padding: 0;
   margin: 0;
+  justify-content: center;
 }
 .portfolio__content-item {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__content-item {
+    margin-right: 0;
+    width: 450px;
+  }
 }
 .portfolio__content-item:nth-child(3n) {
   margin-right: 0px;
