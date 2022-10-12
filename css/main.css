@@ -677,20 +677,17 @@ p {
   .portfolio__content-item {
     margin-right: 0;
     max-width: 450px;
-    border: 3px solid red;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__content-item {
     width: 354px;
-    border: 3px solid red;
     width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__content-item {
     width: 370px;
-    border: 3px solid red;
   }
 }
 .portfolio__card {
