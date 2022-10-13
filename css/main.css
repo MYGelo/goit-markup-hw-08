@@ -947,11 +947,24 @@ p {
 .header {
   border-bottom: 1px solid #ececec;
 }
+@media screen and (max-width: 767px) {
+  .header {
+    height: 60px;
+    display: flex;
+    align-content: center;
+  }
+}
 .header__nav {
   display: flex;
   align-items: center;
   margin-left: 93px;
   line-height: 0;
+}
+@media screen and (min-width: 768px) {
+  .header__nav {
+    margin-left: 88px;
+    margin-right: 96px;
+  }
 }
 .header__contact {
   display: inline-flex;
@@ -976,6 +989,11 @@ p {
 .header__alignment {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .header__alignment {
+    justify-content: space-between;
+  }
 }
 .header__alignment .link {
   position: relative;
@@ -1013,9 +1031,19 @@ p {
   line-height: 0;
   list-style: none;
 }
-
-.nav-links .item + .item {
-  margin-left: 30px;
+@media screen and (max-width: 1199px) {
+  .nav-links {
+    flex-wrap: wrap;
+  }
+}
+.nav-links__item:not(:last-child) {
+  margin-right: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .nav-links__item:not(:last-child) {
+    margin: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .nav-box {
@@ -1031,7 +1059,86 @@ p {
   padding-top: 32px;
   padding-bottom: 31px;
 }
-
-.nav-box .item + .item {
+.nav-box-item:not(:first-child) {
   margin-left: 50px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
