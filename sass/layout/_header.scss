@@ -191,6 +191,8 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-container.is-open {
+  display: flex;
+  flex-direction: column;
   transform: translateX(0);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -234,6 +236,7 @@
   }
   &__social {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
     gap: 10px;
@@ -259,7 +262,7 @@
     }
   }
   &__address {
-    margin-top: 302px;
+    margin-top: auto;
     margin-bottom: 64px;
     &-item {
       &:not(:first-child) {

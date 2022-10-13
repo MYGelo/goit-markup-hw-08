@@ -13,10 +13,17 @@
     padding: 0;
 
     list-style: none;
+
+    @media screen and (max-width: 767px) {
+      justify-content: flex-start;
+    }
   }
   &__navigation-item {
-    &:not(:first-child) {
-      margin-left: 8px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 15px;
+    }
+    &:not(:last-child) {
+      margin-right: 8px;
     }
   }
   &__content {
@@ -58,6 +65,11 @@
     border: 1px solid $card-border-color;
     border-top: 0;
     padding: 19px 23px;
+  }
+  &__card--indent {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding: 19px 32px 55px 32px;
+    }
   }
   &__card-title {
     color: $main-color;
