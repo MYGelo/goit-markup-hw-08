@@ -187,14 +187,14 @@
   background-color: $primery-white-color;
   z-index: 999;
 
-  transform: translateX(100%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-100%);
+  transition: 250ms $cubic-bezier;
 }
 .menu-container.is-open {
   display: flex;
   flex-direction: column;
-  transform: translateX(0);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  transition: 250ms $cubic-bezier;
 }
 
 .menu-container .menu-toggle {
