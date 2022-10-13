@@ -57,7 +57,7 @@
     font-weight: 400;
 
     list-style: none;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       text-align: center;
     }
   }
@@ -107,6 +107,9 @@
     letter-spacing: 0.03em;
     text-align: left;
     color: $primery-white-color;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
 
     @media screen and (max-width: 767px) {
       text-align: center;
