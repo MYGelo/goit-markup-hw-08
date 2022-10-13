@@ -174,7 +174,7 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  fill: $accent-color;
 }
 
 .menu-container {
@@ -184,7 +184,7 @@
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: $primery-white-color;
   z-index: 999;
 
   transform: translateX(100%);
@@ -205,11 +205,55 @@
   padding: 0;
   margin: 0;
   list-style: none;
-}
 
-.mobile-menu .link {
-  display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
+  &__nav-box {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__link {
+    color: #212121;
+
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+    &--current {
+      color: $accent-color;
+    }
+  }
+  &__social {
+    display: flex;
+
+    gap: 10px;
+
+    &--item {
+      &:not(:first-child) {
+        padding-left: 10px;
+        border-left: 1px solid #21212133;
+      }
+    }
+
+    &--link {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      text-align: left;
+
+      text-decoration: none;
+
+      color: $accent-color;
+    }
+  }
 }
