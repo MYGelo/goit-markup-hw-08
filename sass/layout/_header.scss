@@ -211,7 +211,7 @@
 
   &__nav-box {
     &:not(:last-child) {
-      margin-bottom: 10px;
+      margin-bottom: 32px;
     }
   }
 
@@ -238,6 +238,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media screen and (max-width: 480px) {
+      justify-content: none;
+    }
 
     gap: 10px;
 
@@ -274,19 +277,22 @@
     font-family: Roboto;
     font-size: 34px;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: left;
 
     color: $accent-color;
 
     text-decoration: none;
+    @media screen and (max-width: 380px) {
+      font-size: 27px;
+    }
   }
   &__address-link {
     font-family: Roboto;
     font-size: 24px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 1.6;
     letter-spacing: 0.02em;
     text-align: left;
 

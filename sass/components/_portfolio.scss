@@ -16,6 +16,10 @@
 
     @media screen and (max-width: 767px) {
       justify-content: flex-start;
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+      margin-bottom: 30px;
     }
   }
   &__navigation-item {
