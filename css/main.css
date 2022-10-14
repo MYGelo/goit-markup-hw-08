@@ -1220,7 +1220,7 @@ p {
 }
 @media screen and (max-width: 480px) {
   .mobile-menu__social {
-    justify-content: none;
+    justify-content: flex-start;
   }
 }
 .mobile-menu__social--item:not(:first-child) {
