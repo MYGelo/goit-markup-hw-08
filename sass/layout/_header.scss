@@ -187,7 +187,7 @@
   background-color: $primery-white-color;
   z-index: 999;
 
-  transform: translateY(-100%);
+  transform: translateY(-150%);
   transition: 250ms $cubic-bezier;
 }
 .menu-container.is-open {
